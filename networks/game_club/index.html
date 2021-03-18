@@ -1,0 +1,52 @@
+<!DOCTYPE html5>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+    <link rel="stylesheet" href="../../home/style.css">
+</head>
+
+
+<body>
+    <header> 
+        <a href="/"><img src="../../home/logo.svg" alt="" width="32ex"/ align="top"></a>&nbsp; 
+        <a id="headerLink" href="/">new b[s]</a> 
+        <span class="hidden"> - </span>
+        <span id="headerSubtitle">networking that meant to be good</span>
+    </header>
+
+    <nav>
+        <div id="left">
+            <a href="#">home</a>
+            <a href="#"><b>networks</b></a>
+        </div>
+        <div id="right">
+            <a href="#">source</a>
+        </div>
+    </nav>
+
+    <aside>
+        <ul>
+            <li><a href="#">about</a></li>
+            <li><a href="#"><b>game_club/</b></a></li>
+        </ul>
+    </aside>
+
+    <main>
+        <h1>Game club</h1>
+        <p>This is the common solution for game club network.</p>
+        <img src="../net.jpg" alt="Here should be a screenshot of that network from CPT =(">
+        <p>You are also able to <a href="../club.pkt">download .pkt file</a> to see details of that network.</p>
+        <p> Without going into details, we can simply say that the network consists of three subnets:
+        <ul>
+            <li>Network for local administrators - 192.168.0.0(/16)</li>
+            <li>Network for guests (DHCP is used)</li>
+            <li>Gaming network itself (10.0.0.0(/8)). This one can be extended or splitted more (scalable). If you ran out of NIs on switch you can add another one using GigabitEthernet0/1 as incoming and GigabitEthernet0/2 as outgoing in a list. 
+    </main>
+
+</body>
+
+</html>
